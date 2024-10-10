@@ -1,5 +1,4 @@
 body {
-    font-family: 'Playfair Display', serif; /* Atualizando para Playfair Display */
     margin: 0;
     padding: 0;
     background-color: #000;
@@ -75,11 +74,7 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
-#servicos {
-    padding: 80px 20px;
-    text-align: center;
-    background: #111;
-}
+
 
 .container {
     display: flex;
@@ -104,7 +99,7 @@ section h2 {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 10px;   
 }
 
 section h2::after {
@@ -145,4 +140,52 @@ footer {
 
 #servicos, #sobre {
     text-align: center; /* Centraliza o texto e a imagem */
+}
+
+.responsive-image {
+    width: 15rem;
+    max-width: 400px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Centraliza a imagem */
+    margin: 0 auto; /* Centraliza a imagem no contêiner */
+    border-radius: 10px; /* Bordas arredondadas, se desejar */
+}
+
+#servicos {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+}
+
+#servicos h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+#servicos p {
+    max-width: 600px; /* Limita a largura do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contacts {
+    display: flex; /* Ou não usar se optar pela segunda abordagem */
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contacts a {
+    display: block; /* Se não estiver usando flexbox */
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contatos {
+    width: 50px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
 }
