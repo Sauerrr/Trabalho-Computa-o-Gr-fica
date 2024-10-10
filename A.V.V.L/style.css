@@ -1,0 +1,148 @@
+body {
+    font-family: 'Playfair Display', serif; /* Atualizando para Playfair Display */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f5c518;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.subtitle {
+    font-family: 'Julius Sans One', sans-serif; /* Atualizando para Julius Sans One */
+    font-size: 36px; /* Ajuste o tamanho conforme necessário */
+    color: #f5c518; /* Cor para harmonizar com o restante */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+    text-transform: uppercase; /* Para manter a estética */
+}
+
+
+header {
+    background: url('https://source.unsplash.com/1600x900/?business') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 150px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 20px; /* Aumenta o espaço entre o título e o nav */
+}
+
+nav {
+    margin: 20px 0;
+    position: relative;
+    display: flex; /* Alinhamento em linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav a {
+    color: #f5c518;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #f5c518;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    margin-top: 5px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+#servicos {
+    padding: 80px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px; /* Espaçamento entre as seções */
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #f5c518;
+}
+
+section:last-child {
+    border-right: none; /* Remove a borda do último item */
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: #f5c518;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+section p {
+    max-width: 300px; /* Limitar a largura do parágrafo */
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.service-image,
+.about-image {
+    max-width: 100%; /* Para que a imagem não exceda a largura do contêiner */
+    height: auto; /* Para manter a proporção da imagem */
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais elegante */
+}
+
+#servicos, #sobre {
+    text-align: center; /* Centraliza o texto e a imagem */
+}
