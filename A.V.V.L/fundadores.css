@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f5c518;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    background: url('https://source.unsplash.com/1600x900/?business') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 50px; 
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #f5c518;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+#fundadores {
+    padding: 40px 20px;
+    background: #111;
+}
+
+.fundador {
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 40px; 
+    border: 1px solid #f5c518; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    background: rgba(18, 18, 18, 0.8); 
+    padding: 20px; 
+}
+
+.fundador-imagem {
+    width: 250px;  /* Aumentado */
+    height: 250px; /* Aumentado */
+    border-radius: 10px; 
+    margin-right: 20px; 
+}
+
+
+.fundador-descricao {
+    flex: 1; 
+    text-align: left; 
+    transition: border 0.3s; /* Transição para borda */
+}
+
+
+.fundador h2 {
+    font-size: 28px; 
+    margin: 0 0 10px; 
+    text-transform: uppercase; 
+}
+
+.fundador p {
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fundadores {
+    padding: 40px 20px;
+    background: #222; /* Fundo escuro para contraste */
+    color: #f5c518; /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+#fundadores h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+    text-transform: uppercase;
+    position: relative;
+}
+
+#fundadores p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px; /* Limita a largura do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada parágrafo */
+}
+
+#fundadores blockquote {
+    background: rgba(255, 255, 255, 0.1); /* Fundo levemente claro */
+    padding: 15px; /* Espaçamento interno */
+    border-left: 5px solid #f5c518; /* Borda à esquerda */
+    font-style: italic;
+    max-width: 800px; /* Limita a largura do bloco de citação */
+    margin: 20px auto; /* Centraliza o bloco */
+}
